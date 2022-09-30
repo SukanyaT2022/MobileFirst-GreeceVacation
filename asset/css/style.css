@@ -1,0 +1,70 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+html,body{
+overflow-x: hidden;
+}
+:root{
+--primaryColor:pink;
+--secondaryColor:green ;
+--thirdColor:blue ;
+--textColor:black ;
+}
+
+
+
+
+/* mobile first we start with media queries--
+if go below 300 change color to nocolor--and go over 600px it change to no color again
+we focus bet 300px and 600px*/
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+
+    .NavBar{
+        background-color: var(--secondaryColor);
+        width: 100%;
+        height:auto ;
+        padding: 5px;
+
+        }
+.NavBar a{/* remove under line off*/
+   text-decoration: none;
+   color: var(--textColor);
+
+}
+.NavBar ul li{
+margin: 5px 0px 5px 15px;
+list-style: none;/*remove dot off*/
+
+}
+        .logo{
+            width:80px;
+            height: ;
+        }
+        .logo img{
+            width:100%; 
+        }
+
+        .searchBox input{
+            
+        }
+}
+
+/* if do not use min and max width together use below code */
+/* mobile first we make mobile size first and put media queries first--add min-width instead of Max width
+@media screen and (min-width:400px){
+    .NavBar{
+        background-color: var(--primaryColor);
+        }
+}
+*/
+/* we can use max width and min width at the same time*/
+/*if screen size below 600px it will chanhe color to third color-blue
+@media screen and (max-width:600px){
+    .NavBar{
+        background-color: var(--thirdColor);
+        }
+}
+
+*/
