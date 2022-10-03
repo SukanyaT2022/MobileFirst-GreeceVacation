@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="NavBar">
+        <div class="logo">
+<img src="asset/Images/logo-BgRemove.png">
+        </div>
+
+<!--dropdownbar//toggleBTN link to javaScript hide and unhide-->
+<i class="fa-solid fa-bars" onclick="toggleBTN()"></i>
+<!--below div hide the whole navigation-->
+<div class="hide" id="unhideBoxJavaS">
+<ul>
+<a href=""><li>Home</li></a>
+<a href=""><li>Tips Travel</li></a>
+<a href=""><li>Things to do</li></a>
+<a href=""><li>Weather</li></a>
+</ul> 
+<!--searchBox-->  
+<div class="searchBox">
+<form class="searchInsideBox">
+<input type="search" placeholder="Search...">
+<input type="submit" class="hoverClick" value="Search">
+
+</form>
+</div> 
+
+</div>
+    </nav>
+
+
+
+
+
+
+
+
+
+   
+    
+</body>
+
+<script>
+    //toggle means hide and unhide
+function toggleBTN(){
+var hideUnhide=document.getElementById("unhideBoxJavaS");
+hideUnhide.classList.toggle("hide")
+
+}
+
+</script>
+<script src="https://kit.fontawesome.com/42d8882816.js" crossorigin="anonymous"></script>
+
+
+</html>
