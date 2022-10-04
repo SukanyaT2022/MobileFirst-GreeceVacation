@@ -86,9 +86,15 @@ list-style: none;/*remove dot off*/
 }
 /*yellow } is end for media querie for phone
 
+
+
+
 /* start media queries for ipad---
-max-width: 850px means mediaquries work until 850--more than 850px media quries does not work*/
-@media only screen and (max-width: 850px) {
+max-width: 850px means mediaquries work until 850 go lower to 601 will work
+--more than 850px media quries does not work*/
+
+@media only screen and (max-width: 850px)  and (min-width: 601px){
+
     /*ipad size we do not need drop down bar--so we put display none*/
 
 
@@ -104,9 +110,29 @@ max-width: 850px means mediaquries work until 850--more than 850px media quries 
     }
 
 
+    .NavBar ul li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        font-style: none;
+
+    }
+
+  
 
 
 
+ .hide a{
+text-decoration: none;/*remove hyperlink*/
+    }
+
+    .controlUL{
+        display: flex;
+       
+       }
+    
+    
 
 }
 
