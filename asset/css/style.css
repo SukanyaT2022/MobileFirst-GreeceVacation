@@ -107,32 +107,45 @@ max-width: 850px means mediaquries work until 850 go lower to 601 will work
  display: flex;
  align-items: center;
  justify-content: space-between;
+ background-color: red;
     }
 
 
-    .NavBar ul li{
+    .NavBar ul{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        text-decoration: none;
-        font-style: none;
+        background-color: aqua;
+        margin-right: 10px;
+        
+     
 
     }
+    /*ul li we target li*/
+    .NavBar ul li{
+list-style: none;/*remove dot*/
+margin: 0px 10px;
 
-  
-
-
+    }
 
  .hide a{
 text-decoration: none;/*remove hyperlink*/
-    }
 
+    }
+/*control UL control nav bar and search box*/
     .controlUL{
         display: flex;
+        margin-right: 30px;
        
        }
     
-    
+       .logo{
+        width:80px;
+        height: ;
+    }
+    .logo img{
+        width:100%; 
+    }
 
 }
 
